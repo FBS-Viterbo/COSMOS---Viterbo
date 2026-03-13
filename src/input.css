@@ -13,14 +13,13 @@
     @apply text-5xl md:text-7xl font-bold leading-tight;
   }
 
-  body {
+  .banner {
     background:
       linear-gradient(rgba(5, 11, 24, 0.8), rgba(5, 11, 24, 0.8)),
       url("../img/home-banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
   }
 
   .text--secondary {
@@ -112,5 +111,15 @@
   .btn--secondary {
     @apply border border-white text-white bg-transparent 
          hover:bg-white hover:text-primary;
+  }
+
+  .tabCard {
+    @apply bg-[#1d1d1daf] rounded-xl p-6 shadow-lg min-w-[200px];
+  }
+  .tabCard h3 {
+    @apply text-4xl md:text-2xl font-bold text-pink-500;
+  }
+  .tabCard p {
+    @apply text-gray-400 mt-6;
   }
 }
