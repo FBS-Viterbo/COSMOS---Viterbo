@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #050b18;
+}
+
+@layer base {
+  .container {
+    @apply max-w-800 mx-auto px-5;
+  }
+  h1 {
+    @apply text-8xl text-white;
+  }
+  body {
+    background:
+      linear-gradient(rgba(5, 11, 24, 0.8), rgba(5, 11, 24, 0.8)),
+      url("../img/home-banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  .text--secondary {
+    @apply text-gray-500;
+  }
+}
+
+@layer components {
+  .header {
+    @apply py-5 bg-primary text-white relative;
+  }
+
+  .header__wrapper {
+    @apply flex items-center justify-between;
+  }
+
+  .header__logo {
+    @apply flex items-center gap-3 text-lg font-semibold tracking-wide;
+  }
+
+  .header__logo img {
+    @apply w-8 h-8;
+  }
+
+  /* burger button - visible only on mobile */
+  .header__burger {
+    @apply flex flex-col gap-1 md:hidden;
+  }
+
+  .header__burger span {
+    @apply block w-6 h-0.5 rounded-md bg-white transition-transform duration-300 ease-in-out;
+  }
+
+  .header__burger.active span:nth-child(1) {
+    @apply rotate-45 translate-y-[6px];
+  }
+
+  .header__burger.active span:nth-child(2) {
+    @apply opacity-0;
+  }
+
+  .header__burger.active span:nth-child(3) {
+    @apply -rotate-45 -translate-y-[6px];
+  }
+
+  /* Navigation container */
+  .header__nav {
+    /* MOBILE: absolute dropdown */
+    @apply absolute top-full left-0 w-full bg-primary hidden md:block md:static md:w-auto;
+  }
+
+  /* Navigation list: flex row on desktop, column on mobile */
+  .header__nav ul {
+    @apply flex flex-col items-center gap-6 py-6 md:flex-row md:gap-10 md:py-0;
+  }
+
+  .header__nav a {
+    @apply transition hover:text-white;
+  }
+
+  .header__nav .active {
+    @apply text-white border-b-2 border-red-500 pb-1;
+  }
+
+  /* open state for mobile menu */
+  .header__nav.open {
+    @apply block;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium transition;
+  }
+
+  .btn img {
+    @apply w-5 h-5 object-contain;
+  }
+
+  .btn--third {
+    @apply border border-pink-500 text-pink-500 
+         hover:bg-pink-500/10
+         shadow-[0_0_12px_rgba(236,72,153,0.6)]
+         bg-[rgba(236,72,154,0.38)];
+  }
+
+  .btn--primary {
+    @apply bg-pink-500 text-white hover:bg-pink-600;
+  }
+
+  .btn--secondary {
+    @apply border border-white text-white bg-transparent 
+         hover:bg-white hover:text-primary;
+  }
+}
