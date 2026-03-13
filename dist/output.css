@@ -549,8 +549,10 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .btn img {
-    height: calc(var(--spacing) * 5);
+    position: relative;
+    top: calc(var(--spacing) * 1);
     width: calc(var(--spacing) * 5);
+    height: calc(var(--spacing) * 5);
     object-fit: contain;
   }
   .btn--third {

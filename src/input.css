@@ -109,7 +109,7 @@
   }
 
   .btn img {
-    @apply w-5 h-5 object-contain;
+    @apply size-5 relative top-1 object-contain;
   }
 
   .btn--third {
