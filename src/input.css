@@ -24,6 +24,10 @@
     @apply text-5xl md:text-7xl font-bold leading-tight;
   }
 
+  h3 {
+    @apply text-3xl font-bold;
+  }
+
   h4 {
     @apply text-2xl font-bold;
   }
@@ -52,11 +56,11 @@
   }
 
   .header__logo {
-    @apply flex items-center gap-3 text-lg font-semibold tracking-wide;
+    @apply flex items-center text-lg font-semibold tracking-wide;
   }
 
   .header__logo img {
-    @apply w-8 h-8;
+    @apply size-15 relative top-1;
   }
 
   /* burger button - visible only on mobile */
