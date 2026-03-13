@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+:root {
+  --deep-space: #0a0a0f;
+  --cosmic-blue: #1a1a2e;
+  --nebula-purple: #16213e;
+  --starlight: #e94560;
+  --accent-cyan: #0f3460;
+  --text-primary: #eaeaea;
+  --text-secondary: #a0a0a0;
+  --glow: rgba(233, 69, 96, 0.3);
+}
+
 @theme {
   --color-primary: #050b18;
 }
@@ -13,6 +24,10 @@
     @apply text-5xl md:text-7xl font-bold leading-tight;
   }
 
+  h4 {
+    @apply text-2xl font-bold;
+  }
+
   .banner {
     background:
       linear-gradient(rgba(5, 11, 24, 0.8), rgba(5, 11, 24, 0.8)),
@@ -23,7 +38,7 @@
   }
 
   .text--secondary {
-    @apply text-gray-400 text-lg leading-relaxed max-w-2xl;
+    @apply text-[#a0a0a0] text-lg leading-relaxed max-w-2xl;
   }
 }
 
@@ -121,5 +136,9 @@
   }
   .tabCard p {
     @apply text-gray-400 mt-6;
+  }
+
+  .social__card {
+    @apply bg-[#16161b] border-[1.5px] border-[#27272b] flex items-center justify-center rounded-full w-10 h-10;
   }
 }
