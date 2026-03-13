@@ -36,20 +36,26 @@
     </header>
 
     <!-- banner -->
-    <section class="banner">
+    <section
+      class="banner flex items-center justify-center text-center min-h-[90vh]"
+    >
       <div class="container">
-        <div class="banner__wrapper">
+        <div class="banner__wrapper flex flex-col items-center gap-5">
           <button class="btn btn--third">
             <img src="../img/logo.png" alt="icon" />
             <span> Exploring the Unknown </span>
           </button>
-          <h1 class="title">Journey Beyond the Stars</h1>
+          <h1
+            class="title bg-gradient-to-r from-white via-pink-300 to-pink-500 bg-clip-text text-transparent"
+          >
+            Journey Beyond the Stars
+          </h1>
           <p class="text--secondary">
             Discover the next generation of space exploration. From Mars
             missions to deep space telescopes, we're pushing the boundaries of
             human knowledge.
           </p>
-          <div class="controls">
+          <div class="controls flex items-center gap-4 mt-6">
             <button class="btn btn--primary">View Missions</button>
             <button class="btn btn--secondary">Our Fleet</button>
           </div>
