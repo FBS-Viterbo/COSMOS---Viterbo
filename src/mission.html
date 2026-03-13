@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COSMOS</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-primary">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="../img/logo.png" alt="" />
+            <h3>COSMOS</h3>
+          </div>
+
+          <!-- burger -->
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__nav">
+            <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a class="active" href="./mission.html">Missions</a></li>
+              <li><a href="./space_craft.html">Spacecraft</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- background -->
+    <img
+      class="absolute -z-1 top-0 w-screen max-h-[1000px] object-cover"
+      src="../img/home-banner.png"
+      alt=""
+    />
+
+    <!-- banner title -->
+    <div class="banner__title mt-10">
+      <div class="container">
+        <div
+          class="banner__title__wrapper flex flex-col items-center justify-center"
+        >
+          <h1 class="text-white">Active Missions</h1>
+          <p class="text--secondary mt-5">
+            Current space exploration initiatives pushing the boundaries of
+            human knowledge and technological capability.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- mission__content -->
+    <div class="mission__content mt-10 mb-20">
+      <div class="container">
+        <div
+          class="flex flex-col gap-5 max-w-[1300px] m-auto md:grid md:grid-cols-3 md:grid-rows-2"
+        >
+          <!-- 1 -->
+          <div class="mission__card">
+            <!-- image -->
+            <div class="mc__image">
+              <img src="../img/moon.jpg" alt="" />
+            </div>
+            <!-- info -->
+            <div class="info">
+              <div class="date">
+                <i class="fa-solid fa-calendar"></i>
+                <p class="date__text">Launched: July 2020</p>
+              </div>
+              <h4>Perseverance Rover</h4>
+              <p>
+                Exploring Mars' Jezero Crater to seek signs of ancient life and
+                collect samples for future return to Earth.
+              </p>
+              <span class="line"></span>
+              <div class="bot__icon">
+                <div class="content__icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                  <p>Mars</p>
+                </div>
+                <div class="content__icon">
+                  <i class="fa-regular fa-alarm-clock"></i>
+                  <p>Sol 987</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="mission__card">
+            <!-- image -->
+            <div class="mc__image">
+              <img src="../img/earth_satelite.jpg" alt="" />
+            </div>
+            <!-- info -->
+            <div class="info">
+              <div class="date">
+                <i class="fa-solid fa-calendar"></i>
+                <p class="date__text">Continuous Operation</p>
+              </div>
+              <h4>International Space Station</h4>
+              <p>
+                Humanity's permanent laboratory in low Earth orbit, hosting
+                cutting-edge research in microgravity.
+              </p>
+              <span class="line"></span>
+              <div class="bot__icon">
+                <div class="content__icon">
+                  <i class="fa-solid fa-earth-americas"></i>
+                  <p>LEO</p>
+                </div>
+                <div class="content__icon">
+                  <i class="fa-solid fa-user-group"></i>
+                  <p>7 Crew</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="mission__card">
+            <!-- image -->
+            <div class="mc__image">
+              <img src="../img/space.jpg" alt="" />
+            </div>
+            <!-- info -->
+            <div class="info">
+              <div class="date">
+                <i class="fa-solid fa-calendar"></i>
+                <p class="date__text">Launched: Dec 2021</p>
+              </div>
+              <h4>James Webb Telescope</h4>
+              <p>
+                Observing the universe in infrared to see the first galaxies
+                formed after the Big Bang.
+              </p>
+              <span class="line"></span>
+              <div class="bot__icon">
+                <div class="content__icon">
+                  <i class="fa-solid fa-binoculars"></i>
+                  <p>L2 Orbit</p>
+                </div>
+                <div class="content__icon">
+                  <i class="fa-solid fa-camera"></i>
+                  <p>13.5B yrs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="mission__card">
+            <!-- image -->
+            <div class="mc__image">
+              <img src="../img/ship.jpg" alt="" />
+            </div>
+            <!-- info -->
+            <div class="info">
+              <div class="date">
+                <i class="fa-solid fa-calendar"></i>
+                <p class="date__text">Launched: Nov 2024</p>
+              </div>
+              <h4>Artemis II</h4>
+              <p>
+                First crewed mission to orbit the Moon since Apollo 17, paving
+                the way for lunar surface return.
+              </p>
+              <span class="line"></span>
+              <div class="bot__icon">
+                <div class="content__icon">
+                  <i class="fa-solid fa-binoculars"></i>
+                  <p>Lunar Orbit</p>
+                </div>
+                <div class="content__icon">
+                  <i class="fa-solid fa-camera"></i>
+                  <p>4 Astronauts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="mission__card">
+            <!-- image -->
+            <div class="mc__image">
+              <img src="../img/earth_space.jpg" alt="" />
+            </div>
+            <!-- info -->
+            <div class="info">
+              <div class="date">
+                <i class="fa-solid fa-calendar"></i>
+                <p class="date__text">Launched: Oct 2024</p>
+              </div>
+              <h4>Europa Clipper</h4>
+              <p>
+                Investigating Jupiter's moon Europa to determine if its
+                subsurface ocean could harbor life.
+              </p>
+              <span class="line"></span>
+              <div class="bot__icon">
+                <div class="content__icon">
+                  <i class="fa-solid fa-binoculars"></i>
+                  <p>Jupiter</p>
+                </div>
+                <div class="content__icon">
+                  <i class="fa-solid fa-camera"></i>
+                  <p>49 Flybys</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="mission__card">
+            <!-- image -->
+            <div class="mc__image">
+              <img src="../img/moon.jpg" alt="" />
+            </div>
+            <!-- info -->
+            <div class="info">
+              <div class="date">
+                <i class="fa-solid fa-calendar"></i>
+                <p class="date__text">Launched: 2027</p>
+              </div>
+              <h4>Dragonfly</h4>
+              <p>
+                Robotic rotorcraft lander exploring Saturn's moon Titan,
+                searching for prebiotic chemical processes.
+              </p>
+              <span class="line"></span>
+              <div class="bot__icon">
+                <div class="content__icon">
+                  <i class="fa-solid fa-binoculars"></i>
+                  <p>Titan</p>
+                </div>
+                <div class="content__icon">
+                  <i class="fa-solid fa-camera"></i>
+                  <p>Drone</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="footer bg-primary text-white border-t-[2px] border-[#27272b]"
+    >
+      <div class="container">
+        <div class="footer__wrapper flex flex-col">
+          <div
+            class="top flex flex-col gap-10 py-10 md:flex-row w-full justify-between"
+          >
+            <div class="icon flex items-center justify-center">
+              <img
+                class="size-10 relative top-[4px]"
+                src="../img/logo.png"
+                alt=""
+              />
+              <h4>COSMOS</h4>
+            </div>
+
+            <ul class="flex items-center justify-center gap-5 text--secondary">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Spacecraft</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+
+            <div class="flex items-center justify-center gap-5">
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-regular fa-camera"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom text-center border-t-[2px] border-[#27272b] py-5">
+            <p class="text--secondary m-auto">
+              © 2026 Cosmos Space Exploration. All rights reserved.
+            </p>
+            <small class="text-[#a0a0a0]">Designed by Vince</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
