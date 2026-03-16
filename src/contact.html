@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="../img/logo.png" alt="" />
+            <h3>COSMOS</h3>
+          </div>
+
+          <!-- burger -->
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__nav">
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="./mission.html">Missions</a></li>
+              <li><a href="./space_craft.html">Spacecraft</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a class="active" href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact pt-15 pb-20">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="title">
+            <h1 class="text-white text-center">Get in Touch</h1>
+            <p class="text-secondary text-center mt-10">
+              Connect with our team for mission updates, educational resources,
+              or partnership opportunities.
+            </p>
+          </div>
+          <div
+            class="main__content mt-15 md:grid md:grid-cols-2 md:items-center md:justify-items-center"
+          >
+            <div class="max-w-md text-white text-center md:text-start">
+              <h2 class="text-2xl font-semibold mb-3">
+                Let's Explore Together
+              </h2>
+
+              <p class="text-gray-300 mb-8">
+                Whether you're a student, educator, or space enthusiast, we'd
+                love to hear from you.
+              </p>
+
+              <div
+                class="flex flex-col gap-5 items-center justify-center md:justify-start md:items-start"
+              >
+                <!-- Mission Control -->
+                <div class="info__item">
+                  <div class="icon__box">📍</div>
+                  <div>
+                    <h5 class="font-semibold">Mission Control</h5>
+                    <p class="text-gray-400 text-sm">
+                      Johnson Space Center <br />
+                      Houston, Texas 77058
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="info__item">
+                  <div class="icon__box">✉️</div>
+                  <div>
+                    <h5 class="font-semibold">Email</h5>
+                    <p class="text-gray-400 text-sm">missions@cosmos.space</p>
+                  </div>
+                </div>
+
+                <!-- Social -->
+                <div class="info__item">
+                  <div class="icon__box">📱</div>
+                  <div>
+                    <h5 class="font-semibold">Social</h5>
+                    <p class="text-gray-400 text-sm">
+                      @CosmosSpace on all platforms
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form
+              action="#"
+              class="bg-gradient-to-b from-[#0f172a] to-[#1e293b] p-10 rounded-2xl space-y-5 w-full max-w-md text-white mt-15"
+            >
+              <!-- Full Name -->
+              <div class="flex flex-col gap-2">
+                <label for="full_name">Full Name</label>
+                <input
+                  id="full_name"
+                  type="text"
+                  placeholder="John Astronaut"
+                  class="bg-[#111827] border border-gray-700 rounded-lg px-4 py-3 text-sm outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500"
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="flex flex-col gap-2">
+                <label for="email">Email Address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="john@example.com"
+                  class="bg-[#111827] border border-gray-700 rounded-lg px-4 py-3 text-sm outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500"
+                />
+              </div>
+
+              <!-- Subject -->
+              <div class="flex flex-col gap-2">
+                <label for="subject">Subject</label>
+                <input
+                  id="subject"
+                  type="text"
+                  placeholder="Mission Inquiry"
+                  class="bg-[#111827] border border-gray-700 rounded-lg px-4 py-3 text-sm outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500"
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="flex flex-col gap-2">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Tell us about your space interests..."
+                  class="bg-[#111827] border border-gray-700 rounded-lg px-4 py-3 text-sm outline-none resize-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500"
+                ></textarea>
+              </div>
+
+              <!-- Button -->
+              <button
+                type="submit"
+                class="w-full bg-pink-500 hover:bg-pink-600 transition rounded-full py-3 font-semibold shadow-lg shadow-pink-500/30"
+              >
+                Send Message 🚀
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- footer -->
+    <footer
+      class="footer bg-primary text-white border-t-[2px] border-[#27272b]"
+    >
+      <div class="container">
+        <div class="footer__wrapper flex flex-col">
+          <div
+            class="top flex flex-col gap-10 py-10 md:flex-row w-full justify-between"
+          >
+            <div class="icon flex items-center justify-center">
+              <img
+                class="size-10 relative top-[4px]"
+                src="../img/logo.png"
+                alt=""
+              />
+              <h4>COSMOS</h4>
+            </div>
+
+            <ul class="flex items-center justify-center gap-5 text-secondary">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Spacecraft</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+
+            <div class="flex items-center justify-center gap-5">
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-regular fa-camera"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom text-center border-t-[2px] border-[#27272b] py-5">
+            <p class="text-secondary m-auto">
+              © 2026 Cosmos Space Exploration. All rights reserved.
+            </p>
+            <small class="text-[#a0a0a0]">Designed by Vince</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/headerNav.js"></script>
+    <script src="../js/burger.js"></script>
+  </body>
+</html>

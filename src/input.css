@@ -428,4 +428,25 @@
   .images__wrapper img {
     @apply rounded-2xl object-cover  md:w-full md:h-full md:object-cover;
   }
+
+  .icon__box {
+    @apply w-10 h-10 rounded-lg bg-[var(--glow)] flex items-center justify-center;
+  }
+
+  .contact {
+    background:
+      linear-gradient(rgba(5, 11, 24, 0.8), rgba(5, 11, 24, 0.8)),
+      url("../img/stars.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .contact .info__item {
+    @apply flex flex-col items-center justify-center gap-4 md:flex-row;
+  }
+
+  .contact form label {
+    @apply text-sm text-[var(--text-secondary)];
+  }
 }
