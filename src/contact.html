@@ -29,7 +29,7 @@
 
           <nav class="header__nav">
             <ul>
-              <li><a href="/home">Home</a></li>
+              <li><a href="./home.html">Home</a></li>
               <li><a href="./mission.html">Missions</a></li>
               <li><a href="./space_craft.html">Spacecraft</a></li>
               <li><a href="./gallery.html">Gallery</a></li>
@@ -40,7 +40,7 @@
       </div>
     </header>
 
-    <section class="contact pt-15 pb-20">
+    <section class="contact pt-15 pb-20 relative">
       <div class="container">
         <div class="contact__wrapper">
           <div class="title">
@@ -51,7 +51,7 @@
             </p>
           </div>
           <div
-            class="main__content mt-15 md:grid md:grid-cols-2 md:items-center md:justify-items-center"
+            class="main__content flex flex-col items-center mt-15 md:grid md:grid-cols-2 md:items-center md:justify-items-center"
           >
             <div class="max-w-md text-white text-center md:text-start">
               <h2 class="text-2xl font-semibold mb-3">
@@ -101,7 +101,7 @@
             </div>
             <form
               action="#"
-              class="bg-gradient-to-b from-[#0f172a] to-[#1e293b] p-10 rounded-2xl space-y-5 w-full max-w-md text-white mt-15"
+              class="bg-linear-to-b from-[#0f172a] to-[#1e293b] p-10 rounded-2xl space-y-5 w-full max-w-md text-white mt-15 relative z-1"
             >
               <!-- Full Name -->
               <div class="flex flex-col gap-2">
@@ -156,16 +156,15 @@
               </button>
             </form>
           </div>
+          <div
+            class="hidden h-30 w-screen absolute bg-primary left-0 bottom-0 -z-0 md:block"
+          ></div>
         </div>
       </div>
     </section>
 
-    
-
     <!-- footer -->
-    <footer
-      class="footer bg-primary text-white border-t-[2px] border-[#27272b]"
-    >
+    <footer class="footer bg-primary text-white border-t-2 border-[#27272b]">
       <div class="container">
         <div class="footer__wrapper flex flex-col">
           <div
