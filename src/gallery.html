@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="gallery__body">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="../img/logo.png" alt="" />
+            <h3>COSMOS</h3>
+          </div>
+
+          <!-- burger -->
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__nav">
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="./mission.html">Missions</a></li>
+              <li><a href="./space_craft.html">Spacecraft</a></li>
+              <li><a class="active" href="./gallery.html">Gallery</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- top title -->
+    <section>
+      <div class="contaner">
+        <div class="flex flex-col gap-4 text-center mb-15 mt-15">
+          <h2 class="text-white">Cosmic Gallery</h2>
+          <p class="text-secondary">
+            Breathtaking images from across the universe captured by our
+            missions and observatories.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- images__container -->
+    <div class="img__container">
+      <div class="container">
+        <div class="images__wrapper">
+          <img class="img-a" src="../img/clouds.jfif" alt="" />
+          <img class="img-b" src="../img/ship_in.jfif" alt="" />
+          <img class="img-c" src="../img/colors.jfif" alt="" />
+          <img class="img-d" src="../img/clouds.jfif" alt="" />
+          <img class="img-e" src="../img/sky_blue.jfif" alt="" />
+          <img class="img-f" src="../img/stars_black.jfif" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="footer bg-primary text-white border-t-[2px] border-[#27272b]"
+    >
+      <div class="container">
+        <div class="footer__wrapper flex flex-col">
+          <div
+            class="top flex flex-col gap-10 py-10 md:flex-row w-full justify-between"
+          >
+            <div class="icon flex items-center justify-center">
+              <img
+                class="size-10 relative top-[4px]"
+                src="../img/logo.png"
+                alt=""
+              />
+              <h4>COSMOS</h4>
+            </div>
+
+            <ul class="flex items-center justify-center gap-5 text-secondary">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Spacecraft</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+
+            <div class="flex items-center justify-center gap-5">
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-regular fa-camera"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom text-center border-t-[2px] border-[#27272b] py-5">
+            <p class="text-secondary m-auto">
+              © 2026 Cosmos Space Exploration. All rights reserved.
+            </p>
+            <small class="text-[#a0a0a0]">Designed by Vince</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

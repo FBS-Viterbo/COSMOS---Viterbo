@@ -387,4 +387,45 @@
   .space__craft__item button {
     @apply w-full mt-5 md:w-fit;
   }
+
+  .gallery__body {
+    background:
+      linear-gradient(rgba(5, 11, 24, 0.8), rgba(5, 11, 24, 0.8)),
+      url("../img/stars.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .images__wrapper {
+    @apply flex flex-col gap-5 mb-20 md:grid md:grid-cols-4 md:grid-rows-4;
+    grid-template-areas:
+      "a a b c"
+      "a a d d"
+      "e f . ."
+      "e . . .";
+  }
+
+  .img-a {
+    grid-area: a;
+  }
+  .img-b {
+    grid-area: b;
+  }
+  .img-c {
+    grid-area: c;
+  }
+  .img-d {
+    grid-area: d;
+  }
+  .img-e {
+    grid-area: e;
+  }
+  .img-f {
+    grid-area: f;
+  }
+
+  .images__wrapper img {
+    @apply rounded-2xl object-cover  md:w-full md:h-full md:object-cover;
+  }
 }
