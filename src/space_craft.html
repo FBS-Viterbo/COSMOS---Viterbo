@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="space__craft__body">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="../img/logo.png" alt="" />
+            <h3>COSMOS</h3>
+          </div>
+
+          <!-- burger -->
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__nav">
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="./mission.html">Missions</a></li>
+              <li>
+                <a class="active" href="./space_craft.html">Spacecraft</a>
+              </li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- content -->
+    <section class="space__craft mt-15">
+      <div class="container">
+        <div class="main__content__wrapper">
+          <div class="flex flex-col items-center justify-center text-center">
+            <h2>Our Fleet</h2>
+            <p>
+              Advanced spacecraft designed for exploration, research, and
+              pushing the boundaries of human presence in space.
+            </p>
+          </div>
+          <div
+            class="space__craft__content flex flex-col items-center justify-center mb-20"
+          >
+            <!-- 1 -->
+            <div class="space__craft__item">
+              <div class="box__container">
+                <div class="box1">
+                  <div class="inner__item"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="text">
+                  <h3>Orion Capsule</h3>
+                  <p class="my-5">
+                    NASA's state-of-the-art crew vehicle designed for deep space
+                    exploration. Capable of sustaining astronauts for months
+                    during missions to the Moon, Mars, and beyond.
+                  </p>
+                </div>
+                <div class="spc__cards">
+                  <div class="spc_card">
+                    <small>CREW CAPACITY</small>
+                    <h4>4 Astronauts</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>MISSION DURATION</small>
+                    <h4>21 Days</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>HEIGHT</small>
+                    <h4>3.3 m</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>DIAMETER</small>
+                    <h4>5 m</h4>
+                  </div>
+                </div>
+                <button class="btn btn--primary">View Specifications</button>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="space__craft__item">
+              <div class="box__container">
+                <div class="box2">
+                  <div class="inner__item"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="text">
+                  <h3>Dragon 2</h3>
+                  <p class="my-5">
+                    SpaceX's reusable crew spacecraft revolutionizing access to
+                    low Earth orbit. First commercial vehicle to carry humans to
+                    the ISS.
+                  </p>
+                </div>
+                <div class="spc__cards">
+                  <div class="spc_card">
+                    <small>CREW CAPACITY</small>
+                    <h4>7 Astronauts</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>REUSABILITY</small>
+                    <h4>10+ Flights</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>HEIGHT</small>
+                    <h4>8.1 m</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>DIAMETER</small>
+                    <h4>4 m</h4>
+                  </div>
+                </div>
+                <button class="btn btn--primary">View Specifications</button>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="space__craft__item">
+              <div class="box__container">
+                <div class="box3">
+                  <div class="inner__item"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="text">
+                  <h3>Starship</h3>
+                  <p class="my-5">
+                    Fully reusable super-heavy launch vehicle designed for Mars
+                    colonization. The largest rocket ever built with.
+                    unprecedented payload capacity.
+                  </p>
+                </div>
+                <div class="spc__cards">
+                  <div class="spc_card">
+                    <small>PAYLOAD TO LEO</small>
+                    <h4>100-150 t</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>HEIGHT</small>
+                    <h4>121 m</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>THRUST</small>
+                    <h4>7,590 t</h4>
+                  </div>
+                  <div class="spc_card">
+                    <small>STAGES</small>
+                    <h4>2 (Reusable)</h4>
+                  </div>
+                </div>
+                <button class="btn btn--primary">View Specifications</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="footer bg-primary text-white border-t-[2px] border-[#27272b]"
+    >
+      <div class="container">
+        <div class="footer__wrapper flex flex-col">
+          <div
+            class="top flex flex-col gap-10 py-10 md:flex-row w-full justify-between"
+          >
+            <div class="icon flex items-center justify-center">
+              <img
+                class="size-10 relative top-[4px]"
+                src="../img/logo.png"
+                alt=""
+              />
+              <h4>COSMOS</h4>
+            </div>
+
+            <ul class="flex items-center justify-center gap-5 text-secondary">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Spacecraft</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+
+            <div class="flex items-center justify-center gap-5">
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-regular fa-camera"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom text-center border-t-[2px] border-[#27272b] py-5">
+            <p class="text-secondary m-auto">
+              © 2026 Cosmos Space Exploration. All rights reserved.
+            </p>
+            <small class="text-[#a0a0a0]">Designed by Vince</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

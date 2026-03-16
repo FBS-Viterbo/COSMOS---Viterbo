@@ -9,6 +9,7 @@
   --text-main: #eaeaea;
   --text-secondary: #a0a0a0;
   --glow: rgba(233, 69, 96, 0.3);
+  --glass: rgba(255, 255, 255, 0.05);
 }
 
 @font-face {
@@ -164,7 +165,7 @@
   }
 
   .btn--primary {
-    @apply bg-[#e94560] text-white hover:bg-pink-600;
+    @apply bg-[var(--starlight)] text-white font-bold hover:bg-pink-600;
   }
 
   .btn--secondary {
@@ -321,5 +322,69 @@
 
   .selected__mission__card .text p {
     @apply text-[var(--text-secondary)] mt-2;
+  }
+
+  .space__craft__body {
+    background:
+      linear-gradient(rgba(5, 11, 24, 0.8), rgba(5, 11, 24, 0.8)),
+      url("../img/stars.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main__content__wrapper {
+    @apply text-white;
+  }
+
+  .main__content__wrapper .box1 {
+    @apply flex flex-col items-center justify-center h-[200px] w-[200px] rounded-2xl bg-gradient-to-br from-white to-[#97d2f5];
+  }
+
+  .main__content__wrapper .box1 .inner__item {
+    @apply h-[120px] w-[120px] rounded-2xl bg-gradient-to-br from-[#2596be] to-[#212c3e];
+  }
+
+  .main__content__wrapper .box2 {
+    @apply flex flex-col items-center justify-center h-[200px] w-[200px] rounded-2xl bg-gradient-to-br from-[#f9ba22] to-[#db7b08];
+  }
+
+  .main__content__wrapper .box2 .inner__item {
+    @apply h-[100px] w-[100px] rounded-full bg-gradient-to-br from-[#fac840] to-[#f6a616];
+  }
+
+  .main__content__wrapper .box3 {
+    @apply flex flex-col items-center justify-center h-[200px] w-[200px] rounded-2xl bg-gradient-to-br from-[#5ca0f9] to-[#2967eb];
+  }
+
+  .main__content__wrapper .box3 .inner__item {
+    @apply h-[50px] w-[80%] rounded-md bg-gradient-to-br from-[#98b9ff] to-[#2967eb];
+  }
+
+  .box__container {
+    @apply flex flex-col items-center justify-center h-[600px];
+  }
+
+  .spc__cards {
+    @apply grid grid-cols-2 grid-rows-2 gap-5;
+  }
+
+  .spc_card {
+    @apply flex flex-col gap-2 bg-[var(--glass)] p-5 rounded-md border border-[var(--glass)];
+  }
+
+  .spc_card h4 {
+    @apply text-[var(--starlight)];
+  }
+
+  .space__craft__item {
+    @apply flex flex-col items-center justify-center md:grid md:grid-cols-2;
+  }
+  .space__craft__item:nth-child(even) {
+    @apply md:[&>*:first-child]:order-2 md:[&>*:last-child]:order-1;
+  }
+
+  .space__craft__item button {
+    @apply w-full mt-5 md:w-fit;
   }
 }
