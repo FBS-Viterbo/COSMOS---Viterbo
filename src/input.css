@@ -6,9 +6,17 @@
   --nebula-purple: #16213e;
   --starlight: #e94560;
   --accent-cyan: #0f3460;
-  --text-primary: #eaeaea;
+  --text-main: #eaeaea;
   --text-secondary: #a0a0a0;
   --glow: rgba(233, 69, 96, 0.3);
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme {
@@ -20,12 +28,32 @@
     @apply max-w-6xl mx-auto px-5;
   }
 
+  .text-main {
+    @apply text-white;
+  }
+
+  body {
+    font-family: "Space Grotesk", sans-serif;
+  }
+
   h1 {
     @apply text-5xl md:text-7xl font-bold leading-tight;
   }
 
+  h2 {
+    @apply text-4xl md:text-4xl font-bold leading-tight;
+  }
+
+  h3 {
+    @apply text-3xl font-bold leading-tight;
+  }
+
   h4 {
     @apply text-2xl font-bold;
+  }
+
+  h5 {
+    @apply font-bold;
   }
 
   .banner {
@@ -37,8 +65,20 @@
     background-repeat: no-repeat;
   }
 
-  .text--secondary {
-    @apply text-[#a0a0a0] text-lg leading-relaxed max-w-2xl;
+  .text-secondary {
+    @apply text-[#a0a0a0];
+  }
+
+  .tech_spec_contents {
+    @apply flex flex-col rounded-md bg-[#121217] mt-10 max-w-[750px];
+  }
+
+  .tech_spec_contents .tech_spec_content {
+    @apply grid grid-cols-[40%_60%] gap-5 border-b border-[#a0a0a0] last:border-b-0 p-5;
+  }
+
+  .tech_spec_content .text-secondary {
+    @apply self-center;
   }
 }
 
@@ -119,6 +159,10 @@
          hover:bg-pink-500/30;
   }
 
+  .btn--4rth {
+    @apply border border-[#81898d] text-[#81898d] bg-[#121217];
+  }
+
   .btn--primary {
     @apply bg-[#e94560] text-white hover:bg-pink-600;
   }
@@ -142,8 +186,24 @@
     @apply bg-[#16161b] border-[1.5px] border-[#27272b] flex items-center justify-center rounded-full w-10 h-10;
   }
 
+  .social__card i {
+    @apply text-[var(--text-secondary)];
+  }
+
   .mission__card {
-    @apply bg-[#141c34] rounded-2xl overflow-hidden max-w-[480px] border-[1px] border-[#919395];
+    @apply bg-[#141c34] relative rounded-2xl overflow-hidden max-w-[480px] border-[1px] border-[#919395];
+  }
+
+  .mission__card .card__status {
+    @apply absolute right-5 top-5  flex gap-2 rounded-full  py-1 px-3 border-[1px];
+  }
+
+  .mission__card .card__status.card__active {
+    @apply border-green-500 text-green-500 bg-green-500/20;
+  }
+
+  .mission__card .card__status.card__not__active {
+    @apply border-red-500 text-red-500 bg-red-500/10;
   }
 
   .mission__card .mc__image img {
@@ -180,5 +240,86 @@
 
   .mission__card .content__icon {
     @apply flex gap-2 items-center justify-center;
+  }
+  .card__main__status {
+    @apply flex items-center justify-center gap-2 w-fit px-4 py-2 rounded-full;
+  }
+  .card__main__status::before {
+    content: "";
+    @apply inline-block w-2 h-2 rounded-full bg-green-500;
+  }
+  .card__main__status.card__active {
+    @apply border-green-500 text-green-500 bg-green-500/20;
+  }
+
+  .card__banner {
+    background:
+      linear-gradient(rgba(5, 11, 24, 0.8), rgba(5, 11, 24, 0.8)),
+      url("../img/moon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .key__achievements__img {
+    @apply h-[300px] w-full rounded-2xl object-cover;
+  }
+
+  .tech__tab__item {
+    @apply flex;
+  }
+
+  .mission__data {
+    @apply flex flex-col gap-5 p-5 border border-[#27272b] rounded-2xl mt-10 bg-[var(--cosmic-blue)];
+  }
+
+  .graph__container {
+    @apply block h-2 w-full rounded-full bg-[#a0a0a0];
+  }
+
+  .mission__graph {
+    @apply block h-2 w-[70%] rounded-full bg-gradient-to-r from-pink-500 to-blue-500;
+  }
+
+  .mission__data .line {
+    @apply block h-[1px] w-full bg-[#a0a0a0];
+  }
+
+  .quick__links {
+    @apply flex flex-col gap-8 p-5 pb-10 border border-[#27272b] rounded-2xl mt-10 bg-[var(--cosmic-blue)];
+  }
+
+  .quick__links p {
+    @apply text-[var(--text-secondary)];
+  }
+
+  .quick__links .quick__links__data {
+    @apply flex flex-col gap-8;
+  }
+
+  .share__mission {
+    @apply flex flex-col gap-5 p-5 border border-[#27272b] rounded-2xl mt-10 bg-[var(--cosmic-blue)];
+  }
+  .share__mission h5 {
+    @apply text-white;
+  }
+
+  .selected__mission__card {
+    @apply flex flex-col border border-[var(--text-secondary)] rounded-2xl overflow-hidden;
+  }
+
+  .selected__mission__card img {
+    @apply h-[250px] object-cover;
+  }
+
+  .selected__mission__card .text h5 {
+    @apply text-[var(--text-main)];
+  }
+  .selected__mission__card .text {
+    @apply p-5;
+  }
+
+  .selected__mission__card .text p {
+    @apply text-[var(--text-secondary)] mt-2;
   }
 }

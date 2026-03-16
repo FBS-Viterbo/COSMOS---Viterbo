@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COSMOS</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-primary flex flex-col">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="../img/logo.png" alt="" />
+            <h3>COSMOS</h3>
+          </div>
+
+          <!-- burger -->
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__nav">
+            <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a class="active" href="./mission.html">Missions</a></li>
+              <li><a href="./space_craft.html">Spacecraft</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <section class="card__banner pt-5 pb-10">
+      <div class="container">
+        <div class="card__banner__wrapper">
+          <div
+            class="flex items-center gap-5 justify-center text-secondary md:justify-start mt-30"
+          >
+            <small>Home</small>
+            <i class="fa-solid fa-arrow-right"></i>
+            <small>Missions</small>
+            <i class="fa-solid fa-arrow-right"></i>
+            <small>Perseverance Rover</small>
+          </div>
+          <div class="card__main__status card__active mt-5">
+            <p>Active Mission</p>
+          </div>
+          <div class="mt-5">
+            <small class="text-secondary">📅 Launched: July 30, 2020</small>
+          </div>
+          <h1 class="text-white my-8">Perseverance Rover</h1>
+          <p class="text-secondary max-w-[700px]">
+            Exploring Mars' Jezero Crater to seek signs of ancient life and
+            collect samples for future return to Earth. The most sophisticated
+            rover ever sent to the Red Planet.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- main content -->
+    <section class="relative">
+      <img
+        class="absolute w-screen left-0 top-0 -z-1"
+        src="../img/stars.png"
+        alt=""
+      />
+      <div class="container">
+        <div class="main__content__wrapper md:grid grid-cols-[3fr_1fr] gap-10">
+          <!-- left -->
+          <div class="flex flex-col gap-10 mt-10">
+            <!-- info -->
+            <div class="text-secondary">
+              <p>
+                The Mars 2020 Perseverance rover mission is part of NASA's Mars
+                Exploration Program, a long-term effort of robotic exploration
+                of the Red Planet. The mission 'addresses high-. priority
+                science goals for Mars exploration, including key questions
+                about the potential for life on Mars.
+              </p>
+              <p>
+                Perseverance is designed to better understand the geology of
+                Mars and seek signs of ancient life. The mission will collect
+                and store a set of rock and soil samples that could be returned
+                to Earth in the future. It will also test new technology to
+                benefit future robotic and human exploration of Mars.
+              </p>
+            </div>
+            <!-- mission -->
+            <div class="mt-20 flex flex-col gap-5">
+              <div class="flex flex-col w-fit gap-5">
+                <h3 class="text-white">Mission Objectives</h3>
+                <span class="h-[2px] w-full bg-[#4d1c27]"></span>
+              </div>
+              <ul class="flex flex-col gap-5 list-disc text-secondary ps-5">
+                <li>
+                  <p>Explore geologically diverse landing site</p>
+                </li>
+                <li>
+                  <p>Assess ancient habitability</p>
+                </li>
+                <li>
+                  <p>
+                    Seek signs of ancient life, particularly in special rocks
+                    known to preserve signs of life over time
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Gather rock and soil samples that could be returned to Earth
+                    by a future NASA mission
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Demonstrate technology for future robotic and human
+                    exploration
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- key achievements -->
+            <div class="mt-10">
+              <div class="flex flex-col w-fit gap-5">
+                <h3 class="text-white">Key Achievements</h3>
+                <span class="h-[2px] w-full bg-[#4d1c27]"></span>
+              </div>
+              <p class="text-secondary mt-5">
+                Since landing in Jezero Crater on February 18, 2021,
+                Perseverance has traveled over 15 kilometers and collected 23
+                rock and soil samples. The rover successfully completed the
+                first powered flight on another planet by deploying the
+                Ingenuity helicopter, which exceeded expectations by completing
+                72 flights over nearly three years.
+              </p>
+              <!-- images -->
+              <div
+                class="flex flex-col mt-5 gap-5 md:grid grid-cols-2 md:grid-rows-2"
+              >
+                <img
+                  class="key__achievements__img"
+                  src="../img/moon.jpg"
+                  alt="moon"
+                />
+                <img
+                  class="key__achievements__img"
+                  src="../img/colors.jfif"
+                  alt="moon"
+                />
+                <img
+                  class="key__achievements__img"
+                  src="../img/earth_space.jpg"
+                  alt="moon"
+                />
+                <img
+                  class="key__achievements__img"
+                  src="../img/ship_in.jfif"
+                  alt="moon"
+                />
+              </div>
+
+              <!-- technical specification -->
+              <div class="mt-10">
+                <div class="flex flex-col w-fit gap-5">
+                  <h3 class="text-white">Technical Specifications</h3>
+                  <span class="h-0.5 w-full bg-[#4d1c27]"></span>
+                </div>
+                <div class="tech_spec_contents">
+                  <div class="tech_spec_content">
+                    <p class="text-secondary">Launch Vehicle</p>
+                    <p class="text-white">Atlas V 541</p>
+                  </div>
+                  <div class="tech_spec_content">
+                    <p class="text-secondary">Launch Site</p>
+                    <p class="text-white">
+                      Cape Canaveral Air + Launch Site Force Station, Florida
+                    </p>
+                  </div>
+                  <div class="tech_spec_content">
+                    <p class="text-secondary">Landing Site</p>
+                    <p class="text-white">Jezero Crater, Mars</p>
+                  </div>
+                  <div class="tech_spec_content">
+                    <p class="text-secondary">Mission Duration</p>
+                    <p class="text-white">
+                      At least 1 Mars year (about 687 Earth days)
+                    </p>
+                  </div>
+                  <div class="tech_spec_content">
+                    <p class="text-secondary">Mass</p>
+                    <p class="text-white">1,025 kg (2,260 lbs)</p>
+                  </div>
+                  <div class="tech_spec_content">
+                    <p class="text-secondary">Power Source</p>
+                    <p class="text-white">
+                      Multi-Mission Radioisotope Thermoelectric Generator
+                      (MMRTG)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- qt -->
+              <div class="flex gap-5 mt-5">
+                <div class="container">
+                  <span class="self-stretch w-[10px] bg-[#4d1c27]"></span>
+                  <div class="flex flex-col gap-10">
+                    <p class="text-secondary">
+                      "This landing is one of those pivotal moments for NASA,
+                      the United States, and space exploration globally - when
+                      we know we are on the cusp of discovery and sharpening our
+                      pencils, so to speak, to rewrite the textbooks."
+                    </p>
+                    <h5 class="text-white italic">
+                      - Steve Jurczyk, former NASA Acting Administrator
+                    </h5>
+                  </div>
+                </div>
+              </div>
+
+              <span class="block h-[1px] w-[100%] mt-10 bg-[#27272b]"></span>
+
+              <div class="flex flex-wrap gap-3 mt-10">
+                <span class="btn btn--4rth"> Mars </span>
+                <span class="btn btn--4rth"> Rover </span>
+                <span class="btn btn--4rth"> NASA </span>
+                <span class="btn btn--4rth"> Astrobiology </span>
+                <span class="btn btn--4rth"> Sample Return </span>
+                <span class="btn btn--4rth"> Ingenuity </span>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="flex flex-col gap-10">
+            <!-- mission data -->
+            <div class="mission__data">
+              <h5 class="text-main">📅 Mission Data</h5>
+              <div class="flex justify-between">
+                <p class="text-secondary">Distance</p>
+                <h5 class="text-main">28.5 km</h5>
+              </div>
+              <span class="line"></span>
+              <div class="graph__container">
+                <span class="mission__graph"></span>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-secondary">Samples Collected</p>
+                <h5 class="text-main">23 / 30</h5>
+              </div>
+              <span class="line"></span>
+              <div class="graph__container">
+                <span class="mission__graph"></span>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-secondary">Sol (Mars Day)</p>
+                <h5 class="text-main">1,089</h5>
+              </div>
+              <span class="line"></span>
+              <div class="flex justify-between">
+                <p class="text-secondary">Temperature</p>
+                <h5 class="text-main">-63°C</h5>
+              </div>
+              <span class="line"></span>
+              <div class="flex justify-between">
+                <p class="text-secondary">Wind Speed</p>
+                <h5 class="text-main">22 km/h</h5>
+              </div>
+            </div>
+            <!-- quick links -->
+            <div class="quick__links">
+              <h5 class="text-white">🔗 Quick Links</h5>
+              <div class="quick__links__data">
+                <p>📡 Live Mission Control</p>
+                <p>📸 Raw Image Gallery</p>
+                <p>📍 Interactive Map</p>
+                <p>📺 Mission Videos</p>
+                <p>📚 Scientific Papers</p>
+              </div>
+            </div>
+
+            <div class="share__mission">
+              <h5>📩 Share Mission</h5>
+              <div class="flex gap-5">
+                <div class="social__card">
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="social__card">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="social__card">
+                  <a href="#"><i class="fa-regular fa-camera"></i></a>
+                </div>
+                <div class="social__card">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Missions -->
+    <section>
+      <div class="container">
+        <div
+          class="text__title flex flex-col items-center justify-center my-10 md:mt-20"
+        >
+          <h2 class="text-main">Related Missions</h2>
+          <p class="text-secondary mt-5">
+            Explore other active missions in our solar system
+          </p>
+        </div>
+        <div class="flex flex-col gap-5 mb-20 md:grid md:grid-cols-3">
+          <div class="selected__mission__card">
+            <img src="../img/ship_in.jfif" alt="iss" />
+            <div class="text">
+              <h5>International Space Station</h5>
+              <p>
+                Continuous human presence in low Earth orbit for over 23 years.
+              </p>
+            </div>
+          </div>
+          <div class="selected__mission__card">
+            <img src="../img/space.jpg" alt="jwt" />
+            <div class="text">
+              <h5>James Webb Telescope</h5>
+              <p>
+                Observing the universe in infrared to see the first galaxies.
+              </p>
+            </div>
+          </div>
+          <div class="selected__mission__card">
+            <img src="../img/ship_in.jfif" alt="ap" />
+            <div class="text">
+              <h5>Artemis Program</h5>
+              <p>
+                Returning humans to the Moon and establishing sustainable
+                presence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="footer bg-primary text-white border-t-[2px] relative bottom-0 border-[#27272b]"
+    >
+      <div class="container">
+        <div class="footer__wrapper flex flex-col">
+          <div
+            class="top flex flex-col gap-10 py-10 md:flex-row w-full justify-between"
+          >
+            <div class="icon flex items-center justify-center">
+              <img
+                class="size-10 relative top-[4px] z-1"
+                src="../img/logo.png"
+                alt=""
+              />
+              <h4>COSMOS</h4>
+            </div>
+
+            <ul class="flex items-center justify-center gap-5 text-secondary">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Spacecraft</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+
+            <div class="flex items-center justify-center gap-5">
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-regular fa-camera"></i></a>
+              </div>
+              <div class="social__card">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom text-center border-t-[2px] border-[#27272b] py-5">
+            <p class="text-secondary m-auto">
+              © 2026 Cosmos Space Exploration. All rights reserved.
+            </p>
+            <small class="text-secondary">Designed by Vince</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/headerNav.js"></script>
+    <script src="../js/burger.js"></script>
+  </body>
+</html>
